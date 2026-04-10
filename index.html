@@ -1,109 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <title>Rakshitha</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Icons -->
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<header>
-    <nav>
-        <h1 class="logo">MyPortfolio</h1>
+    <header>
+        <h1>Rakshitha<span>m</span></h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <section class="hero">
+        <h1>Rakshitha</h1>
+        <h3><span id="typing"></span></h3>
+        <p class="subtitle">BCA Pursuing Student</p>
+        <p class="tagline">
+            I am passionate about coding, front-end design and backend development.
+            I enjoy building modern, responsive and interactive web experiences.
+        </p>
+    </section>
 
-        <button id="theme-toggle">🌙</button>
-    </nav>
-</header>
+    <section id="about" class="section hidden">
+        <h2>About</h2>
+        <div class="card">
+            I am currently pursuing BCA and continuously improving my programming skills.
+            My focus is on front-end development and design while also exploring backend technologies.
+        </div>
+    </section>
 
-<!-- HOME -->
-<section id="home" class="section fade-in">
-    <h2>Hello, I'm <span>RAKSHITHA V</span></h2>
-    <p>Frontend Developer 🚀</p>
+    <section id="skills" class="section hidden">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>C</span>
+            <span>C++</span>
+            <span>Python</span>
+            <span>HTML</span>
+            <span>Java</span>
+        </div>
+    </section>
 
-    <button onclick="scrollToSection('contact')">hii</button>
+    <section id="projects" class="section hidden">
+        <h2>Projects</h2>
 
-    <!-- SOCIAL LINKS -->
-    <div class="social-links">
-        <a href="https://github.com/mouli-spec-dot" target="_blank">
-            <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/moulika-m-undefined-2a24ab3b7/" target="_blank">
-            <i class="fab fa-linkedin"></i>
-        </a>
-    </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section fade-in">
-    <h2>About Me</h2>
-    <p>iam a passinoate BCA student currently in my 2nd semester,with a deep interest in creating beautiful and functional web experience</p>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section fade-in">
-    <h2>Projects</h2>
-
-    <div class="projects-container">
-        <div class="project-card">
-            <img src="https://via.placeholder.com/300" alt="">
-            <h3>Project One</h3>
-            <p>Awesome web app</p>
+        <div class="card">
+            <h3>Website using HTML</h3>
+            <p>Designed and developed a responsive website using structured HTML.</p>
         </div>
 
-        <div class="project-card">
-            <img src="https://via.placeholder.com/300" alt="">
-            <h3>Project Two</h3>
-            <p>Cool UI design</p>
+        <div class="card">
+            <h3>Mini Projects</h3>
+            <p>Worked on academic programming and front-end design projects.</p>
         </div>
+    </section>
 
-        <div class="project-card">
-            <img src="https://via.placeholder.com/300" alt="">
-            <h3>Project Three</h3>
-            <p>Portfolio website</p>
-        </div>
-    </div>
-</section>
+    <section id="contact" class="section hidden">
+        <h2>Contact</h2>
 
-<!-- CONTACT -->
-<section id="contact" class="section fade-in">
-    <h2>Contact Me</h2>
+        <div class="contact-grid">
 
-    <!-- CONTACT INFO -->
-    <p>📧 Email: 25bcaf49@kristujayanti.com</p>
-    <p>📞 Phone: +91 9380332274</p>
+            <!-- Info Column -->
+            <div class="card info-card">
+                <div class="social-icons">
 
-    <div class="social-links">
-        <a href="https://github.com/Rakshitha-V49" target="_blank">
-            <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/moulika-m-undefined-2a24ab3b7/" target="_blank">
-            <i class="fab fa-linkedin"></i>
-        </a>
-    </div>
+                    <a href="mailto:25bcaa47@kristujayanti.com" title="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
 
-    <!-- FORM -->
-    <form id="contact-form">
-    <input type="text" id="name" placeholder="Your Name" required>
-    <input type="email" id="email" placeholder="Your Email" required>
-    <textarea id="message" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-</form>
-</section>
+                    <a href="tel:+918618828618" title="Phone">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
 
-<script src="script.js"></script>
+                    <a href="https://github.com/nargis-27kh" target="_blank" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/nargis-khatoon-0395133b1" target="_blank" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                </div>
+                <!-- Form Column -->
+                <div class="card form-card">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm">
+                        <input type="text" id="name" required>
+                        <input type="email" id="email" required>
+                        <textarea id="message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+    </section>
+
+    <footer>
+        © 2026 Rakshitha | All Rights Reserved
+    </footer>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyC-gf1Cg7jjzrwMWunqLvcLEJ2y-tptjcc",
+            authDomain: "nargis27kh.firebaseapp.com",
+            projectId: "nargis27kh",
+            storageBucket: "nargis27kh.firebasestorage.app",
+            messagingSenderId: "524828738660",
+            appId: "1:524828738660:web:266b8ddd5b2e343faa0b71"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        const form = document.getElementById("contactForm");
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            try {
+                await addDoc(collection(db, "messages"), {
+                    name: name,
+                    email: email,
+                    message: message,
+                    createdAt: new Date()
+                });
+
+                alert("Message Sent Successfully!");
+                form.reset();
+            } catch (error) {
+                console.error("Error:", error);
+            }
+        });
+    </script>
+
+    <script type="module" src="script.js"></script>
 </body>
+
 </html>
